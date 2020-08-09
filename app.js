@@ -6,4 +6,4 @@ let finalResult = document.getElementById('result').value;
 
 addbtn.addEventListener('click', function() {
     console.log(num1);
-})
+});
