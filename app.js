@@ -1,10 +1,9 @@
 
-var num1 = document.getElementById("firstnum");
+var num1 = document.getElementById('firstnum');
 let num2 = document.getElementById('secondnum');
 let addbtn = document.querySelector('button');
-let finalResult = document.getElementById('result').value;
+let finalResult = document.getElementById('result');
 
 addbtn.addEventListener('click', function() {
-    finalResult = (+num1.value + +num2.value);
-    console.log(finalResult)
+    finalResult.innerHTML = (+num1.value + +num2.value);
 });
