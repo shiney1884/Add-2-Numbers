@@ -27,7 +27,7 @@ body {
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px;
     animation-name: slide-from-left;
-    animation-duration: 1.5s;
+    animation-duration: 1.5s ease;
     animation-fill-mode: forwards;
 }
 
