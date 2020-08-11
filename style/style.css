@@ -33,7 +33,7 @@ body {
 
 @keyframes slide-from-left {
     0% {
-        left: -10000px;
+        left: -1000px;
     }
     100% {
         left: 30%;
