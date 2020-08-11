@@ -26,6 +26,18 @@ body {
     text-align: center;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px;
+    animation-name: slide-from-left;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-from-left {
+    0% {
+        left: -10000px;
+    }
+    100% {
+        left: 30%;
+    }
 }
 
 .grid-container {
@@ -50,7 +62,7 @@ body {
     outline: none;
     background-color: #47E5BC;
     color: #4357AD;
-    border: 2px solid ;
+    border: 2px solid;
 }
 
 input::-webkit-outer-spin-button,
