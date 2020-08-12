@@ -40,12 +40,16 @@ body {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 100% 10%;
+    display: flex;
 }
 
+
 .column2 {
-    margin-top: 50px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .add-input {
@@ -60,7 +64,7 @@ body {
     border-radius: 15px;
     outline: none;
     background-color: #47E5BC;
-    color: #4357AD;
+    color: #1b2b75;
     border: 2px solid;
 }
 
@@ -81,9 +85,9 @@ input::-webkit-inner-spin-button {
 .column2 button {
     border: none;
     cursor: pointer;
-    color: #4357AD;
+    color: #BF211E;
     background-color: #47E5BC;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     outline: none;
 }
 
@@ -95,5 +99,66 @@ input::-webkit-inner-spin-button {
     text-align: center;
     margin-top: 10px;
 }
+
+@media (max-width:1020px) {
+    .form {
+        width: 60%;
+    }
+
+    @keyframes slide-from-left {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 20%;
+    }
+}
+}
+
+@media (max-width: 685px) {
+    .form {
+        width: 70%;
+    }
+
+    @keyframes slide-from-left {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 15%;
+    }
+}
+}
+
+@media (max-width: 585px) {
+    .form {
+    width: 90%;
+    }
+
+       @keyframes slide-from-left {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 3.5%;
+    }
+}
+}
+
+@media (max-width: 485px) {
+       .form {
+    width: 95%;
+    }
+}
+
+      @keyframes slide-from-left {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 1.3%;
+    }
+}
+ 
 
 
