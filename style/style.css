@@ -7,16 +7,23 @@
 
 body {
     font-family:'Helvetica', sans-serif;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #BF211E;
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    /* position: fixed;
     top: 25%;
-    left: 30%;
+    left: 30%; */
     width: 40%;
     border: 2px solid #A9FFCB;
     padding: 17.5px;
@@ -100,7 +107,7 @@ input::-webkit-inner-spin-button {
     margin-top: 10px;
 }
 
-@media (max-width:1020px) {
+@media (max-width:1000px) {
     .form {
         width: 60%;
     }
